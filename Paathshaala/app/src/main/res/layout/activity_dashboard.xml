@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:background="@drawable/shade2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PaathShaala"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/text_view_print"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:id="@+id/tvname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvname"
+        android:layout_marginLeft="30dp"
+        android:text="Number Of Active Users:"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:textColor="@color/text_view_print"
+        android:paddingTop="40dp"
+        android:textSize="20dp"
+        android:id="@+id/tvnumusers" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvnumusers"
+        android:id="@+id/tvusercount"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/tvname"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:paddingTop="40dp"
+        android:textColor="@color/text_view_print"
+        android:text="count"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvnumusers"
+        android:text="Personal Rating:"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/text_view_print"
+        android:paddingTop="40dp"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:textSize="20dp"
+        android:id="@+id/tvrating1" />
+
+    <Button
+        android:id="@+id/brate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvrating1"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_base"
+        android:onClick="rate"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:text="Rate" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvrating1"
+        android:id="@+id/edrating"
+        android:layout_below="@+id/tvnumusers"
+        android:paddingTop="40dp"
+        android:textColorHint="@color/text_view_print"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:hint="personal rating"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvrating1"
+        android:text="Overall Rating:"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/text_view_print"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:paddingTop="60dp"
+        android:textSize="20dp"
+        android:id="@+id/tvrating2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvrating2"
+        android:id="@+id/edrating2"
+        android:layout_below="@+id/tvrating1"
+        android:paddingTop="60dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:textColorHint="@color/text_view_print"
+        android:hint="Overall Rating"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:id="@+id/feedbackbutton"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvrating2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_base"
+        android:onClick="submitFeedback"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:text="Submit Feedback"
+        android:textSize="14dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="322dp"
+        android:layout_below="@+id/feedbackbutton"
+        android:layout_marginTop="43dp"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#CCCCCC"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:dividerHeight="1dp"
+        android:paddingLeft="2dp" />
+</RelativeLayout>

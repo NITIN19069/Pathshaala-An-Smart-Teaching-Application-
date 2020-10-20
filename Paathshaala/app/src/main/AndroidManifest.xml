@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.paathshaala">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.paathshaala.splash_activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".showStudentDetail"></activity>
+        <activity android:name=".ShowCourseDetails" />
+        <activity android:name=".Signup_Userinfo" />
+        <activity android:name=".PostCourse" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Dashboard" />
+        <activity
+            android:name=".TeachaerHome"
+            android:label="@string/title_activity_teachaer_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StudentHome"
+            android:label="@string/title_activity_student_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Home" />
+        <activity android:name=".Signup" />
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

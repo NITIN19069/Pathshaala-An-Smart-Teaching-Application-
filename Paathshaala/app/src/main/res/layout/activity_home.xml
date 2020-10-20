@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Home"
+    android:fillViewport="true"
+    android:background="@drawable/shade3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="16sp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/calender"
+                        android:layout_width="55sp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:onClick="onDashboard"
+                        android:src="@drawable/dashboard"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="Dashboard"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/orderHistroy"
+                        android:layout_width="55sp"
+                        android:layout_height="50sp"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="onTeacher"
+                        android:layout_weight="2"
+                        android:src="@drawable/teacher" />
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:textColor="@android:color/white"
+                        android:text="Teacher" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/profile"
+                        android:layout_width="65sp"
+                        android:layout_height="50sp"
+
+                        android:layout_marginLeft="10dp"
+                        android:onClick="onProfile"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/profile" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:layout_weight="2"
+                        android:text="Profile" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/cart"
+                        android:layout_width="55sp"
+                        android:layout_height="50sp"
+                        android:onClick="onStudent"
+                        android:layout_weight="2"
+                        android:src="@drawable/student1"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:textColor="@android:color/white"
+                        android:text="Student" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/team"
+                        android:layout_width="55sp"
+                        android:layout_height="50sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/team_group" />
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:textColor="@android:color/white"
+                        android:layout_weight="2"
+                        android:text="Team" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="25dp"
+        android:background="@drawable/shade2">
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sign Up"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:paddingTop="20px"/>
+
+
+        <EditText
+            android:id="@+id/edName"
+            android:paddingLeft="125dp"
+            android:paddingRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:textColorHint="@color/hint_white"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_below="@+id/tvSignUp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/hint_white"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="NAME" />
+
+        <EditText
+            android:id="@+id/edPhoneno"
+            android:layout_width="355dp"
+            android:textColorHint="@color/hint_white"
+            android:layout_height="47dp"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:layout_below="@+id/edName"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/edit_text_border"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="28dp"
+            android:textColor="@color/hint_white"
+            android:layout_marginRight="28dp"
+            android:hint="PHONE NUMBER" />
+
+        <EditText
+            android:id="@+id/edDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:paddingLeft="85dp"
+            android:paddingRight="85dp"
+            android:layout_below="@+id/edPhoneno"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:textColorHint="@color/hint_white"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="28dp"
+            android:editable="false"
+            android:textColor="@color/hint_white"
+            android:focusable="false"
+            android:background="@drawable/edit_text_border"
+            android:hint="DATE OF BIRTH" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/edDOB"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-3dp"
+            android:paddingTop="28dp"
+            android:text="Gender:"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edDOB"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="201dp"
+            android:layout_marginLeft="201dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginRight="53dp">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="141dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:text="Male"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_alignStart="@+id/radioGroup"
+                android:layout_alignLeft="@+id/radioGroup"
+                android:layout_alignTop="@+id/radioGroup"
+                android:onClick="onRadioButtonClicked"
+                android:text="Female"></RadioButton>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvQual"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="28dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="23dp"
+            android:text="Qualifications:"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinQual"
+            android:layout_width="172dp"
+            android:layout_height="36dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/tvQual"
+            android:entries="@array/Qualifications"
+            android:prompt="@string/qualification_select"></Spinner>
+
+        <EditText
+            android:id="@+id/edSkills"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_width="354dp"
+            android:layout_height="47dp"
+            android:textColorHint="@color/hint_white"
+            android:layout_below="@+id/spinQual"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="120dp"
+            android:paddingRight="120dp"
+            android:background="@drawable/edit_text_border"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:textColor="@color/hint_white"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="29dp"
+            android:hint="SKILLS" />
+
+
+        <EditText
+            android:id="@+id/edExp"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:paddingLeft="100dp"
+            android:textColorHint="@color/hint_white"
+            android:paddingRight="100dp"
+            android:layout_below="@+id/edSkills"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/edit_text_border"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="28dp"
+            android:textColor="@color/hint_white"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:hint="EXPERIENCE" />
+
+        <EditText
+            android:id="@+id/edCert"
+            android:layout_width="356dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/edExp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="90dp"
+            android:paddingRight="90dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textColorHint="@color/hint_white"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:textColor="@color/hint_white"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="CERTIFICATES" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edCert"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Submit"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:textColor="@android:color/black"
+            android:background="@drawable/button_base"/>
+
+    </RelativeLayout>
+</ScrollView>

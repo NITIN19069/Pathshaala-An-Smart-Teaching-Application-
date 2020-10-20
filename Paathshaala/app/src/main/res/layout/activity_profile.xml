@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:background="@drawable/shade3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@android:id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="362dp"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="296dp"
+            android:layout_height="36dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:background="@drawable/button_base"
+            android:onClick="onLogout"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/logout_btn" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
